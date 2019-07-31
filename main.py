@@ -25,6 +25,8 @@ def cycle(iterable):
 
 #logger
 from datetime import datetime
+
+
 def logging(fname, text):
     f = open(fname,"a")
     out_text = "[%s]\t%s" %(str(datetime.now()),text)
@@ -130,6 +132,7 @@ def test(model, test_loader):
         accuracy = 100. * correct / len(test_loader.dataset)
     return accuracy
 
+
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--lr",default= 1.2e-3, type=float)
@@ -138,7 +141,9 @@ if __name__=="__main__":
     parser.add_argument("--end_iter", default=20000, type=int)
     parser.add_argument("--print_freq", default=10, type=int)
     parser.add_argument("--valid_freq", default=100, type=int)
+    parser.add_argument("--resume", action="store_true")
     parser.add_argument("--prune_type", default="normal", type=str, help="normal | resample | reinit")
+
 
     args = parser.parse_args()
 

@@ -4,7 +4,7 @@ This demonstrates finding a Lenet based winning tickets(structure) that classifi
 
 ## Usage ##
 
-````angular2
-python main.py --prune_type=["choose from normal, resamle, reinit"]
+````bash
+python main.py --prune_type=['choose from normal, resample, reinit']
 ````  
 

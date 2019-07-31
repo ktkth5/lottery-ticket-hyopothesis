@@ -6,10 +6,11 @@ import sys
 
 import matplotlib.pyplot as plt
 
+
 reinit = False
 ITERATION = 5
 
-P = [0,4,8,12,16,17,18,19]
+# P = [0,4,8,12,16,17,18,19]
 P = [i for i in range(0,25,2)]
 x_ticks = []
 test_acc_avg = []
